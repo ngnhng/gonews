@@ -1,3 +1,9 @@
 HackerNews:
   name: Hacker News
   url: https://news.ycombinator.com/rss
+Aljazeera.com:
+  name: Al Jazeera
+  url: https://www.aljazeera.com/xml/rss/all.xml
+Reuters:
+  name: Reuters
+  url: https://www.reutersagency.com/feed/?taxonomy=best-regions&post_type=best

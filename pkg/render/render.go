@@ -51,7 +51,7 @@ func (rder *Renderer) RenderPages() error {
 	for name := range *rder.Feeds {
 		sources = append(sources, name)
 	} // bad design :v
-	for _, feed := range *rder.Feeds {
+	for name, feed := range *rder.Feeds {
 		p := page{
 			Sources:     sources,
 			Title:       feed.Title,
@@ -65,7 +65,7 @@ func (rder *Renderer) RenderPages() error {
 			}
 		}
 		// create file
-		outPath := path.Join(rder.OutPath, Simplify()(feed.Title)+".html")
+		outPath := path.Join(rder.OutPath, Simplify()(name)+".html")
 		file, err := os.Create(outPath)
 
 		if err != nil {
