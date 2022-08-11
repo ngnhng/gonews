@@ -10,6 +10,13 @@ This is purely a hobby project and it is meant to be used for reference only. It
 Either ```git clone``` and build or use:
 ```bash
 go install github.com/nguyendhst/gonews@latest
+touch config.yaml
+```
+Then edit the config file to your liking. The config file is in YAML format. The following is an example config file:
+```yaml
+NewsSource:
+  name: News
+  url: https://example.com/rss
 ```
 and then run:
 ```bash
