@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="robots" content="noindex">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>{{.Title}}</title>
+
+	<style type="text/css">
+		body {
+			margin: 0 auto;
+			max-width: 1024px;
+			padding: .5rem;
+			font-weight: lighter;
+		}
+
+		a {
+			color: blue;
+			text-decoration: none;
+		}
+
+		a:hover {
+			color: darkblue;
+			text-decoration: underline;
+		}
+
+		ul {
+			padding: 0;
+		}
+
+		ul li {
+			display: inline;
+			list-style: none;
+		}
+
+		article {
+			margin-bottom: .75rem;
+		}
+
+		article>h2 {
+			margin-bottom: 0;
+		}
+
+		footer,
+		article>small {
+			color: #666;
+		}
+
+		article>p {
+			line-height: 1.5;
+			word-break: break-word;
+		}
+
+		h1,
+		ul li,
+		article>*,
+		footer {
+			margin: 0;
+			margin-bottom: .5rem;
+			padding: .25rem;
+		}
+	</style>
+</head>
+
+<body>
+	<h2>{{.Description}}</h2>
+
+	<ul>
+		{{range .Sources}}
+		<li><a href="{{. | simplify}}.html">{{.}}</a></li>
+		{{end}}
+	</ul>
+
+	{{range .Items}}
+	<article>
+		<h2>
+			<a href="{{.Link}}" target="_blank">{{.Title | trim}}</a>
+		</h2>
+		{{.Description | unescapeHTML}}
+		<small>
+			on {{.Published}}
+		</small>
+		
+	</article>
+	{{end}}
+
+	<footer>
+		Updated {{time.Format "02. Jan 2006 at 15:04"}}.
+	</footer>
+</body>
+
+</html>
