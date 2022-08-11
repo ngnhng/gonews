@@ -60,7 +60,9 @@ func (rder *Renderer) RenderPages() error {
 		}
 		// check if directory exists
 		if _, err := os.Stat(rder.OutPath); os.IsNotExist(err) {
-			os.Mkdir(rder.OutPath, 0755)
+			if e := os.Mkdir(rder.OutPath, 0755); e != nil {
+				return fmt.Errorf("render: Error creating directory; %w", e)
+			}
 		}
 		// create file
 		outPath := path.Join(rder.OutPath, Simplify()(feed.Title)+".html")
@@ -91,7 +93,9 @@ func (rder *Renderer) RenderIndex() error {
 	}
 	// check if directory exists
 	if _, err := os.Stat(rder.OutPath); os.IsNotExist(err) {
-		os.Mkdir(rder.OutPath, 0755)
+		if e := os.Mkdir(rder.OutPath, 0755); e != nil {
+			return fmt.Errorf("render: Error creating directory; %w", e)
+		}
 	}
 	// create file
 	outPath := path.Join(rder.OutPath, "index.html")

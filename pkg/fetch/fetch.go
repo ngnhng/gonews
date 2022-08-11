@@ -2,7 +2,6 @@ package fetch
 
 import (
 	"fmt"
-	"log"
 	"time"
 
 	"github.com/mmcdole/gofeed"
@@ -40,13 +39,4 @@ func (source NewsSource) Fetch() (*NewsFeed, error) {
 	case <-succeed:
 		return &NewsFeed{Source: &source, Feed: feed}, nil
 	}
-}
-
-func FailedFetchHandler(source NewsSource) {
-	log.Println("Failed to fetch from source: ", source.Name)
-}
-
-func SuccessFetchHandler(source NewsSource, feed *gofeed.Feed) {
-	log.Println("Successfully fetched from source: ", source.Name)
-	log.Println("Feed: ", feed)
 }
