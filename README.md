@@ -14,9 +14,12 @@ touch config.yaml
 ```
 Then edit the config file to your liking. The config file is in YAML format. The following is an example config file:
 ```yaml
-NewsSource:
+NewsSource1:
   name: News
   url: https://example.com/rss
+NewsSource2:
+  name: News2
+  url: https://example.com/rss2
 ```
 and then run:
 ```bash
