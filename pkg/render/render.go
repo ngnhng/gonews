@@ -45,6 +45,7 @@ func UnescapeHTML() func(string) template.HTML {
 	}
 }
 
+// RenderPages renders HTML pages for each source
 func (rder *Renderer) RenderPages() error {
 	var sources []string
 	for name := range *rder.Feeds {
