@@ -5,6 +5,8 @@ env:
   dir: static
 
 on:
+  schedule:
+    - cron: '30 14 * * *'
   push:
     branches:
       - master
