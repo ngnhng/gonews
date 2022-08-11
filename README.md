@@ -4,13 +4,13 @@ This is purely a hobby project and it is meant to be used for reference only. It
 ## Built with
 - [Cobra](https://github.com/spf13/cobra)
 ### Progress
+- Beta version
 - Unstable, not guaranteed to work with any particular source.
 
 ## Usage
 Either ```git clone``` and build or use:
 ```bash
-go install github.com/nguyendhst/gonews@latest
-touch config.yaml
+go install github.com/nguyendhst/gonews@latest && touch config.yaml
 ```
 Then edit the config file to your liking. The config file is in YAML format. The following is an example config file:
 ```yaml
@@ -19,13 +19,20 @@ NewsSource1:
   url: https://example.com/rss
 NewsSource2:
   name: News2
-  url: https://example.com/rss2
+  url: https://example2.com/rss
 ```
 and then run:
 ```bash
 gonews generate
 ```
+## Project structure
+```
+cmd -- contains the main.go and commands
+pkg -- contains the core logic
+ |__ fetch -- contains the logic to fetch the RSS/Atom feeds
+ |__ render -- contains the logic to generate the static site
 
+```
 ## Existing problems
 - Duplicate .html file name in the same directory are not handled yet.
 - Not yet tested on Windows.
