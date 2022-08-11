@@ -27,10 +27,13 @@ gonews generate
 ```
 ## Project structure
 ```
-cmd -- contains the main.go and commands
+cmd -- contains the generate command.
+ |
 pkg -- contains the core logic
- |__ fetch -- contains the logic to fetch the RSS/Atom feeds
- |__ render -- contains the logic to generate the static site
+ |  \__ fetch -- contains the logic to fetch the RSS/Atom feeds
+ |  \__ render -- contains the logic to generate the static site
+ |
+resources -- contains the HTML template file
 
 ```
 ## Existing problems
