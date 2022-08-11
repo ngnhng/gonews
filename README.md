@@ -1,13 +1,20 @@
 # Gonews -- a RSS/Atom feed static site generator
 ## Note
 This is purely a hobby project and it is meant to be used for reference only. It is not meant to be used in production.
-
+## Built with
+- [Cobra](https://github.com/spf13/cobra)
 ### Progress
 - Unstable, not guaranteed to work with any particular source.
 
 ## Usage
-Either ```git clone``` or
-```go get github.com/nguyendhst/gonews@latest```
+Either ```git clone``` and build or use:
+```bash
+go install github.com/nguyendhst/gonews@latest
+```
+and then run:
+```bash
+gonews generate
+```
 
 ## Existing problems
 - Duplicate .html file name in the same directory are not handled yet.
