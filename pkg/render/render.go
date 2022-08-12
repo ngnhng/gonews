@@ -42,7 +42,12 @@ func Trim() func(string) string {
 
 func Simplify() func(string) string {
 	return func(s string) string {
-		return strings.ToLower(strings.ReplaceAll(s, " ", ""))
+		return strings.Map(func(r rune) rune {
+			if r >= 'a' && r <= 'z' {
+				return r
+			}
+			return -1
+		}, strings.ToLower(s))
 	}
 }
 

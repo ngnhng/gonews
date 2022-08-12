@@ -7,3 +7,9 @@ Aljazeera.com:
 Reuters:
   name: Reuters
   url: https://www.reutersagency.com/feed/?taxonomy=best-regions&post_type=best
+Ars Technica:
+  name: Ars Technica
+  url: https://feeds.arstechnica.com/arstechnica/index
+Tom's Hardware:
+  name: Tom's Hardware
+  url: https://www.tomshardware.com/feeds/all
