@@ -54,10 +54,11 @@ to quickly create a Cobra application.`,
 		tmpl, err := template.
 			New(path.Base(templatePath)).
 			Funcs(template.FuncMap{
-				"time":         render.Time(),
-				"trim":         render.Trim(),
-				"simplify":     render.Simplify(),
-				"unescapeHTML": render.UnescapeHTML(),
+				"time":            render.Time(),
+				"trim":            render.Trim(),
+				"simplify":        render.Simplify(),
+				"unescapeHTML":    render.UnescapeHTML(),
+				"formatLocalTime": render.FormatLocalTime(),
 			}).ParseFiles(templatePath)
 
 		if err != nil {

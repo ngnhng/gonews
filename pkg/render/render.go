@@ -52,6 +52,18 @@ func UnescapeHTML() func(string) template.HTML {
 	}
 }
 
+func FormatLocalTime() func(string) string {
+	// format: Mon, 02 Jan 2006 15:04:05 +0000
+	return func(t string) string {
+		tm, err := time.Parse("Mon, 02 Jan 2006 15:04:05 +0000", t)
+		if err != nil {
+			return t
+		}
+		currentTimeZone, _ := time.LoadLocation(TIMEZONE)
+		return tm.In(currentTimeZone).Format("Mon, 02 Jan 2006 15:04")
+	}
+}
+
 // RenderPages renders HTML pages for each source
 func (rder *Renderer) RenderPages() error {
 	var sources []string
