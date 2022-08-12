@@ -6,7 +6,8 @@ env:
 
 on:
   schedule:
-    - cron: '30 6 * * *'
+    # Run every 4 hours
+    - cron: '0 */4 * * *'
   push:
     branches:
       - master
