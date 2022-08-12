@@ -12,6 +12,10 @@ import (
 	"github.com/mmcdole/gofeed"
 )
 
+const (
+	TIMEZONE string = "Asia/Saigon"
+)
+
 type Renderer struct {
 	Tmpl    *template.Template
 	OutPath string
@@ -26,7 +30,10 @@ type page struct {
 }
 
 func Time() func() time.Time {
-	return time.Now
+	currentTimeZone, _ := time.LoadLocation(TIMEZONE)
+	return func() time.Time {
+		return time.Now().In(currentTimeZone)
+	}
 }
 
 func Trim() func(string) string {
