@@ -71,7 +71,7 @@ to quickly create a Cobra application.`,
 		wg := sync.WaitGroup{}
 
 		// Concurrent fetch with timeout
-		parsedFeed := make(map[string]*gofeed.Feed)
+		parsedFeed := make(map[string]*gofeed.Feed, len(newsSources))
 		for _, source := range newsSources {
 			wg.Add(1)
 			go func(source fetch.NewsSource) {
