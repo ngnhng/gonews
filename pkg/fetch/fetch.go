@@ -1,7 +1,7 @@
 package fetch
 
 import (
-	"fmt"
+	"context"
 	"time"
 
 	"github.com/mmcdole/gofeed"
@@ -26,17 +26,11 @@ func (source NewsSource) Fetch() (*NewsFeed, error) {
 	fp := gofeed.NewParser()
 	var feed *gofeed.Feed
 	var err error
-	succeed := make(chan struct{})
-	// Fetch with timeout
-	go func() {
-		feed, err = fp.ParseURL(source.URL)
-		succeed <- struct{}{}
-	}()
-
-	select {
-	case <-time.After(TIMEOUT * time.Second):
-		return nil, fmt.Errorf("fetch: timeout source: %s; %w", source.Name, err)
-	case <-succeed:
-		return &NewsFeed{Source: &source, Feed: feed}, nil
+	ctx, cancel := context.WithTimeout(context.Background(), TIMEOUT*time.Second)
+	defer cancel()
+	feed, err = fp.ParseURLWithContext(source.URL, ctx)
+	if err != nil {
+		return nil, err
 	}
+	return &NewsFeed{Source: &source, Feed: feed}, nil
 }
