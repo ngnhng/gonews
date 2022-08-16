@@ -31,16 +31,20 @@
 		}
 
 		ul {
-			padding: 0;
+			display: flex;
+			list-style: none;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: flex-start;
 		}
 
-		ul li {
-			display: inline;
-			list-style: none;
+		li {
+			border-style: groove;
 		}
 
 		article {
-			margin-bottom: .75rem;
+			display: flex;
+			flex-direction: column;
 		}
 
 		article>h2 {
@@ -51,20 +55,18 @@
 		footer,
 		article>small {
 			color: #666;
-		}
-
-		article>p {
-			line-height: 1.5;
-			word-break: break-word;
+			margin-bottom: .5rem;
 		}
 
 		h1,
 		ul li,
-		article>*,
 		footer {
 			margin: 0;
 			margin-bottom: .5rem;
 			padding: .25rem;
+		}
+		footer {
+			margin-top: 2cm;
 		}
 	</style>
 </head>
@@ -74,18 +76,29 @@
 
 	<ul>
 		
-		<li><a href="hackernews.html">Hacker News</a></li>
-		
 		<li><a href="tomshardware.html">Tom&#39;s Hardware</a></li>
+		
+		<li><a href="aljazeera.html">Al Jazeera</a></li>
 		
 		<li><a href="arstechnica.html">Ars Technica</a></li>
 		
-		<li><a href="aljazeera.html">Al Jazeera</a></li>
+		<li><a href="hackernews.html">Hacker News</a></li>
 		
 		<li><a href="reuters.html">Reuters</a></li>
 		
 	</ul>
 
+	
+	<article>
+		<h2>
+			<a href="https://discord.com/blog/how-discord-supercharges-network-disks-for-extreme-low-latency" target="_blank">How Discord supercharges network disks for extreme low latency</a>
+		</h2>
+		<a href="https://news.ycombinator.com/item?id=32474093">Comments</a>
+		<small>
+			on Tue, 16 Aug 2022 02:24 Asia/Saigon
+		</small>
+		
+	</article>
 	
 	<article>
 		<h2>
@@ -100,11 +113,22 @@
 	
 	<article>
 		<h2>
-			<a href="https://discord.com/blog/how-discord-supercharges-network-disks-for-extreme-low-latency" target="_blank">How Discord supercharges network disks for extreme low latency</a>
+			<a href="https://academic.oup.com/mnras/advance-article-abstract/doi/10.1093/mnras/stac1969/6651563" target="_blank">Colour evolution of Betelgeuse over two millennia, derived from records</a>
 		</h2>
-		<a href="https://news.ycombinator.com/item?id=32474093">Comments</a>
+		<a href="https://news.ycombinator.com/item?id=32478492">Comments</a>
 		<small>
-			on Tue, 16 Aug 2022 02:24 Asia/Saigon
+			on Tue, 16 Aug 2022 09:16 Asia/Saigon
+		</small>
+		
+	</article>
+	
+	<article>
+		<h2>
+			<a href="https://kaveh808.medium.com/41-world-building-and-alternate-reality-common-lisp-ca9fbc619a8c" target="_blank">World Building and Alternate Reality Common Lisp</a>
+		</h2>
+		<a href="https://news.ycombinator.com/item?id=32478797">Comments</a>
+		<small>
+			on Tue, 16 Aug 2022 10:12 Asia/Saigon
 		</small>
 		
 	</article>
@@ -122,154 +146,11 @@
 	
 	<article>
 		<h2>
-			<a href="https://blog.hiler.eu/win32-the-only-stable-abi/" target="_blank">Win32 Is the Only Stable ABI on Linux</a>
-		</h2>
-		<a href="https://news.ycombinator.com/item?id=32471624">Comments</a>
-		<small>
-			on Mon, 15 Aug 2022 23:19 Asia/Saigon
-		</small>
-		
-	</article>
-	
-	<article>
-		<h2>
-			<a href="https://www.atlasobscura.com/articles/beaubec-monastery-ireland" target="_blank">A Farmer’s Hunch Led to a Lost Monastery and a Neolithic Surprise</a>
+			<a href="https://www.atlasobscura.com/articles/beaubec-monastery-ireland" target="_blank">A farmer’s hunch led to a lost monastery and a Neolithic surprise</a>
 		</h2>
 		<a href="https://news.ycombinator.com/item?id=32450427">Comments</a>
 		<small>
 			on Sat, 13 Aug 2022 21:48 Asia/Saigon
-		</small>
-		
-	</article>
-	
-	<article>
-		<h2>
-			<a href="https://en.wikipedia.org/wiki/Preparedness_paradox" target="_blank">Preparedness Paradox</a>
-		</h2>
-		<a href="https://news.ycombinator.com/item?id=32466346">Comments</a>
-		<small>
-			on Mon, 15 Aug 2022 13:02 Asia/Saigon
-		</small>
-		
-	</article>
-	
-	<article>
-		<h2>
-			<a href="https://www.ycombinator.com/blog/learnings-of-a-ceo-wade-foster-zapier" target="_blank">Learnings of a CEO: Wade Foster, Zapier</a>
-		</h2>
-		<a href="https://news.ycombinator.com/item?id=32473112">Comments</a>
-		<small>
-			on Tue, 16 Aug 2022 01:02 Asia/Saigon
-		</small>
-		
-	</article>
-	
-	<article>
-		<h2>
-			<a href="https://www.clear.rice.edu/comp512/Lectures/Papers/1971-allen-catalog.pdf" target="_blank">A catalogue of optimizing transformations [pdf]</a>
-		</h2>
-		<a href="https://news.ycombinator.com/item?id=32447292">Comments</a>
-		<small>
-			on Sat, 13 Aug 2022 12:54 Asia/Saigon
-		</small>
-		
-	</article>
-	
-	<article>
-		<h2>
-			<a href="https://github.com/drand/tlock" target="_blank">Timelock Encryption made possible and easy to use</a>
-		</h2>
-		<a href="https://news.ycombinator.com/item?id=32475237">Comments</a>
-		<small>
-			on Tue, 16 Aug 2022 03:54 Asia/Saigon
-		</small>
-		
-	</article>
-	
-	<article>
-		<h2>
-			<a href="https://www.evilsocket.net/2022/08/15/Process-behaviour-anomaly-detection-using-eBPF-and-unsupervised-learning-Autoencoders/" target="_blank">Process behaviour anomaly detection using eBPF and unsupervised learning</a>
-		</h2>
-		<a href="https://news.ycombinator.com/item?id=32471400">Comments</a>
-		<small>
-			on Mon, 15 Aug 2022 23:02 Asia/Saigon
-		</small>
-		
-	</article>
-	
-	<article>
-		<h2>
-			<a href="https://andrewchen.com/how-to-design-a-referral-program/" target="_blank">How to design a referral program</a>
-		</h2>
-		<a href="https://news.ycombinator.com/item?id=32471605">Comments</a>
-		<small>
-			on Mon, 15 Aug 2022 23:18 Asia/Saigon
-		</small>
-		
-	</article>
-	
-	<article>
-		<h2>
-			<a href="https://www.pagetable.com/?p=460" target="_blank">The Intel 80376 – A legacy-free i386 with a twist (2010)</a>
-		</h2>
-		<a href="https://news.ycombinator.com/item?id=32447374">Comments</a>
-		<small>
-			on Sat, 13 Aug 2022 13:13 Asia/Saigon
-		</small>
-		
-	</article>
-	
-	<article>
-		<h2>
-			<a href="https://www.anyleaf.org/blog/quaternions:-a-practical-guide" target="_blank">Quaternions: A Practical Guide</a>
-		</h2>
-		<a href="https://news.ycombinator.com/item?id=32456848">Comments</a>
-		<small>
-			on Sun, 14 Aug 2022 13:14 Asia/Saigon
-		</small>
-		
-	</article>
-	
-	<article>
-		<h2>
-			<a href="https://blog.quarkslab.com/attacking-titan-m-with-only-one-byte.html" target="_blank">Attacking Titan M with Only One Byte</a>
-		</h2>
-		<a href="https://news.ycombinator.com/item?id=32469019">Comments</a>
-		<small>
-			on Mon, 15 Aug 2022 19:51 Asia/Saigon
-		</small>
-		
-	</article>
-	
-	<article>
-		<h2>
-			<a href="https://honk.sigxcpu.org/con/On_a_road_to_Prizren_with_a_Free_Software_Phone.html" target="_blank">On a road to Prizren with a Free Software Phone</a>
-		</h2>
-		<a href="https://news.ycombinator.com/item?id=32447764">Comments</a>
-		<small>
-			on Sat, 13 Aug 2022 14:46 Asia/Saigon
-		</small>
-		
-	</article>
-	
-	<article>
-		<h2>
-			<a href="https://www.digitalocean.com/blog/digitalocean-response-to-mailchimp-security-incident" target="_blank">Impact to DigitalOcean customers resulting from Mailchimp security incident</a>
-		</h2>
-		<a href="https://news.ycombinator.com/item?id=32476445">Comments</a>
-		<small>
-			on Tue, 16 Aug 2022 05:40 Asia/Saigon
-		</small>
-		
-	</article>
-	
-	<article>
-		<h2>
-			<a href="https://mixed-news.com/en/open-source-rival-for-openais-dall-e-runs-on-your-graphics-card/" target="_blank">Open-source rival for OpenAI’s DALL-E runs on your graphics card</a>
-		</h2>
-		<a href="https://news.ycombinator.com/item?id=32471199">Comments</a>
-		<small>
-			on Mon, 15 Aug 2022 22:49 Asia/Saigon
 		</small>
 		
 	</article>
@@ -287,33 +168,165 @@
 	
 	<article>
 		<h2>
+			<a href="https://norvig.com/unify-bug.pdf" target="_blank">Correcting a widespread error in unification algorithms (1991) [pdf]</a>
+		</h2>
+		<a href="https://news.ycombinator.com/item?id=32435802">Comments</a>
+		<small>
+			on Fri, 12 Aug 2022 15:18 Asia/Saigon
+		</small>
+		
+	</article>
+	
+	<article>
+		<h2>
+			<a href="https://en.wikipedia.org/wiki/Preparedness_paradox" target="_blank">Preparedness Paradox</a>
+		</h2>
+		<a href="https://news.ycombinator.com/item?id=32466346">Comments</a>
+		<small>
+			on Mon, 15 Aug 2022 13:02 Asia/Saigon
+		</small>
+		
+	</article>
+	
+	<article>
+		<h2>
+			<a href="http://www.cs.cmu.edu/afs/cs.cmu.edu/user/mitchell/ftp/mlbook.html" target="_blank">Tom Mitchell&#39;s Machine Learning book now is free</a>
+		</h2>
+		<a href="https://news.ycombinator.com/item?id=32436234">Comments</a>
+		<small>
+			on Fri, 12 Aug 2022 16:28 Asia/Saigon
+		</small>
+		
+	</article>
+	
+	<article>
+		<h2>
+			<a href="https://www.clear.rice.edu/comp512/Lectures/Papers/1971-allen-catalog.pdf" target="_blank">A catalogue of optimizing transformations (1971) [pdf]</a>
+		</h2>
+		<a href="https://news.ycombinator.com/item?id=32447292">Comments</a>
+		<small>
+			on Sat, 13 Aug 2022 12:54 Asia/Saigon
+		</small>
+		
+	</article>
+	
+	<article>
+		<h2>
+			<a href="https://www.ycombinator.com/blog/learnings-of-a-ceo-wade-foster-zapier" target="_blank">Learnings of a CEO: Wade Foster, Zapier</a>
+		</h2>
+		<a href="https://news.ycombinator.com/item?id=32473112">Comments</a>
+		<small>
+			on Tue, 16 Aug 2022 01:02 Asia/Saigon
+		</small>
+		
+	</article>
+	
+	<article>
+		<h2>
+			<a href="https://andrewchen.com/how-to-design-a-referral-program/" target="_blank">How to design a referral program</a>
+		</h2>
+		<a href="https://news.ycombinator.com/item?id=32471605">Comments</a>
+		<small>
+			on Mon, 15 Aug 2022 23:18 Asia/Saigon
+		</small>
+		
+	</article>
+	
+	<article>
+		<h2>
+			<a href="https://www.evilsocket.net/2022/08/15/Process-behaviour-anomaly-detection-using-eBPF-and-unsupervised-learning-Autoencoders/" target="_blank">Process behaviour anomaly detection using eBPF and unsupervised learning</a>
+		</h2>
+		<a href="https://news.ycombinator.com/item?id=32471400">Comments</a>
+		<small>
+			on Mon, 15 Aug 2022 23:02 Asia/Saigon
+		</small>
+		
+	</article>
+	
+	<article>
+		<h2>
+			<a href="https://www.pagetable.com/?p=460" target="_blank">The Intel 80376 – A legacy-free i386 with a twist (2010)</a>
+		</h2>
+		<a href="https://news.ycombinator.com/item?id=32447374">Comments</a>
+		<small>
+			on Sat, 13 Aug 2022 13:13 Asia/Saigon
+		</small>
+		
+	</article>
+	
+	<article>
+		<h2>
+			<a href="https://blog.quarkslab.com/attacking-titan-m-with-only-one-byte.html" target="_blank">Attacking Titan M with Only One Byte</a>
+		</h2>
+		<a href="https://news.ycombinator.com/item?id=32469019">Comments</a>
+		<small>
+			on Mon, 15 Aug 2022 19:51 Asia/Saigon
+		</small>
+		
+	</article>
+	
+	<article>
+		<h2>
+			<a href="https://www.anyleaf.org/blog/quaternions:-a-practical-guide" target="_blank">Quaternions: A Practical Guide</a>
+		</h2>
+		<a href="https://news.ycombinator.com/item?id=32456848">Comments</a>
+		<small>
+			on Sun, 14 Aug 2022 13:14 Asia/Saigon
+		</small>
+		
+	</article>
+	
+	<article>
+		<h2>
+			<a href="https://honk.sigxcpu.org/con/On_a_road_to_Prizren_with_a_Free_Software_Phone.html" target="_blank">On a road to Prizren with a Free Software Phone</a>
+		</h2>
+		<a href="https://news.ycombinator.com/item?id=32447764">Comments</a>
+		<small>
+			on Sat, 13 Aug 2022 14:46 Asia/Saigon
+		</small>
+		
+	</article>
+	
+	<article>
+		<h2>
+			<a href="https://news.ycombinator.com/item?id=32478642" target="_blank">Ask HN: Where to meet people who are interested in building a company together?</a>
+		</h2>
+		<a href="https://news.ycombinator.com/item?id=32478642">Comments</a>
+		<small>
+			on Tue, 16 Aug 2022 09:38 Asia/Saigon
+		</small>
+		
+	</article>
+	
+	<article>
+		<h2>
+			<a href="https://mixed-news.com/en/open-source-rival-for-openais-dall-e-runs-on-your-graphics-card/" target="_blank">Open-source rival for OpenAI’s DALL-E runs on your graphics card</a>
+		</h2>
+		<a href="https://news.ycombinator.com/item?id=32471199">Comments</a>
+		<small>
+			on Mon, 15 Aug 2022 22:49 Asia/Saigon
+		</small>
+		
+	</article>
+	
+	<article>
+		<h2>
+			<a href="https://blog.hiler.eu/win32-the-only-stable-abi/" target="_blank">Win32 Is the Only Stable ABI on Linux?</a>
+		</h2>
+		<a href="https://news.ycombinator.com/item?id=32471624">Comments</a>
+		<small>
+			on Mon, 15 Aug 2022 23:19 Asia/Saigon
+		</small>
+		
+	</article>
+	
+	<article>
+		<h2>
 			<a href="https://news.ycombinator.com/item?id=32470645" target="_blank">Tell HN: After 10 years of experiments, custom username emails receive no spam</a>
 		</h2>
 		<a href="https://news.ycombinator.com/item?id=32470645">Comments</a>
 		<small>
 			on Mon, 15 Aug 2022 22:07 Asia/Saigon
-		</small>
-		
-	</article>
-	
-	<article>
-		<h2>
-			<a href="https://www.tuxdex.com" target="_blank">Anonymous Search Engine</a>
-		</h2>
-		<a href="https://news.ycombinator.com/item?id=32473484">Comments</a>
-		<small>
-			on Tue, 16 Aug 2022 01:31 Asia/Saigon
-		</small>
-		
-	</article>
-	
-	<article>
-		<h2>
-			<a href="https://www.pachyderm.com/careers/#positions" target="_blank">Pachyderm (YC W15) is hiring Go distributed systems and testing engineers</a>
-		</h2>
-		<a href="https://news.ycombinator.com/item?id=32472815">Comments</a>
-		<small>
-			on Tue, 16 Aug 2022 00:41 Asia/Saigon
 		</small>
 		
 	</article>
@@ -331,11 +344,55 @@
 	
 	<article>
 		<h2>
-			<a href="https://github.com/ayntgl/discordo" target="_blank">discordo: Lightweight, secure, and feature-rich Discord terminal client</a>
+			<a href="https://www.pachyderm.com/careers/#positions" target="_blank">Pachyderm (YC W15) is hiring Go distributed systems and testing engineers</a>
 		</h2>
-		<a href="https://news.ycombinator.com/item?id=32474133">Comments</a>
+		<a href="https://news.ycombinator.com/item?id=32472815">Comments</a>
 		<small>
-			on Tue, 16 Aug 2022 02:26 Asia/Saigon
+			on Tue, 16 Aug 2022 00:41 Asia/Saigon
+		</small>
+		
+	</article>
+	
+	<article>
+		<h2>
+			<a href="https://www.tuxdex.com" target="_blank">Anonymous Search Engine</a>
+		</h2>
+		<a href="https://news.ycombinator.com/item?id=32473484">Comments</a>
+		<small>
+			on Tue, 16 Aug 2022 01:31 Asia/Saigon
+		</small>
+		
+	</article>
+	
+	<article>
+		<h2>
+			<a href="https://www.digitalocean.com/blog/digitalocean-response-to-mailchimp-security-incident" target="_blank">Impact to DigitalOcean customers resulting from Mailchimp security incident</a>
+		</h2>
+		<a href="https://news.ycombinator.com/item?id=32476445">Comments</a>
+		<small>
+			on Tue, 16 Aug 2022 05:40 Asia/Saigon
+		</small>
+		
+	</article>
+	
+	<article>
+		<h2>
+			<a href="https://github.com/vassbo/freeshow" target="_blank">Freeshow: A Free and Open-source ProPresenter alternative</a>
+		</h2>
+		<a href="https://news.ycombinator.com/item?id=32476943">Comments</a>
+		<small>
+			on Tue, 16 Aug 2022 06:26 Asia/Saigon
+		</small>
+		
+	</article>
+	
+	<article>
+		<h2>
+			<a href="https://github.com/drand/tlock" target="_blank">Timelock Encryption made possible and easy to use</a>
+		</h2>
+		<a href="https://news.ycombinator.com/item?id=32475237">Comments</a>
+		<small>
+			on Tue, 16 Aug 2022 03:54 Asia/Saigon
 		</small>
 		
 	</article>
@@ -353,73 +410,18 @@
 	
 	<article>
 		<h2>
-			<a href="https://users.ece.cmu.edu/~koopman/stack_computers/index.html" target="_blank">Stack Computers: the new wave (1989)</a>
+			<a href="https://www.sfchronicle.com/tech/article/Apple-to-mandate-three-days-in-a-week-in-the-17375631.php" target="_blank">Apple to mandate three days in a week in the office by Labor Day</a>
 		</h2>
-		<a href="https://news.ycombinator.com/item?id=32456981">Comments</a>
+		<a href="https://news.ycombinator.com/item?id=32478857">Comments</a>
 		<small>
-			on Sun, 14 Aug 2022 13:41 Asia/Saigon
-		</small>
-		
-	</article>
-	
-	<article>
-		<h2>
-			<a href="https://www.privacytools.io/guides/how-to-access-reddit-without-ads-tracking" target="_blank">How to access Reddit without ads and tracking</a>
-		</h2>
-		<a href="https://news.ycombinator.com/item?id=32475580">Comments</a>
-		<small>
-			on Tue, 16 Aug 2022 04:24 Asia/Saigon
-		</small>
-		
-	</article>
-	
-	<article>
-		<h2>
-			<a href="https://origin-discussions2-us-dr-prz.apple.com/en/thread/252794122?page=49" target="_blank">MacBook Air M1 screen crack for no apparent reason</a>
-		</h2>
-		<a href="https://news.ycombinator.com/item?id=32474827">Comments</a>
-		<small>
-			on Tue, 16 Aug 2022 03:16 Asia/Saigon
-		</small>
-		
-	</article>
-	
-	<article>
-		<h2>
-			<a href="https://minimaxir.com/2022/08/gpt3-blog-title-optimizer/" target="_blank">How to create a blog post title optimizer with GPT-3 and Hacker News data</a>
-		</h2>
-		<a href="https://news.ycombinator.com/item?id=32471208">Comments</a>
-		<small>
-			on Mon, 15 Aug 2022 22:49 Asia/Saigon
-		</small>
-		
-	</article>
-	
-	<article>
-		<h2>
-			<a href="https://github.com/tailscale/tailscale-android/pull/45" target="_blank">Add ability to choose a custom coordination server</a>
-		</h2>
-		<a href="https://news.ycombinator.com/item?id=32468430">Comments</a>
-		<small>
-			on Mon, 15 Aug 2022 18:45 Asia/Saigon
-		</small>
-		
-	</article>
-	
-	<article>
-		<h2>
-			<a href="https://www.ftc.gov/legal-library/browse/federal-register-notices/commercial-surveillance-data-security-rulemaking" target="_blank">Commercial Surveillance and Data Security Rulemaking</a>
-		</h2>
-		<a href="https://news.ycombinator.com/item?id=32468701">Comments</a>
-		<small>
-			on Mon, 15 Aug 2022 19:18 Asia/Saigon
+			on Tue, 16 Aug 2022 10:22 Asia/Saigon
 		</small>
 		
 	</article>
 	
 
 	<footer>
-		Updated 16. Aug 2022 at 08:53 Asia/Saigon.
+		Updated 16. Aug 2022 at 10:50 Asia/Saigon.
 	</footer>
 </body>
 

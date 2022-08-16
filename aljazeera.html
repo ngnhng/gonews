@@ -31,16 +31,20 @@
 		}
 
 		ul {
-			padding: 0;
+			display: flex;
+			list-style: none;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: flex-start;
 		}
 
-		ul li {
-			display: inline;
-			list-style: none;
+		li {
+			border-style: groove;
 		}
 
 		article {
-			margin-bottom: .75rem;
+			display: flex;
+			flex-direction: column;
 		}
 
 		article>h2 {
@@ -51,20 +55,18 @@
 		footer,
 		article>small {
 			color: #666;
-		}
-
-		article>p {
-			line-height: 1.5;
-			word-break: break-word;
+			margin-bottom: .5rem;
 		}
 
 		h1,
 		ul li,
-		article>*,
 		footer {
 			margin: 0;
 			margin-bottom: .5rem;
 			padding: .25rem;
+		}
+		footer {
+			margin-top: 2cm;
 		}
 	</style>
 </head>
@@ -74,18 +76,40 @@
 
 	<ul>
 		
-		<li><a href="hackernews.html">Hacker News</a></li>
-		
 		<li><a href="tomshardware.html">Tom&#39;s Hardware</a></li>
+		
+		<li><a href="aljazeera.html">Al Jazeera</a></li>
 		
 		<li><a href="arstechnica.html">Ars Technica</a></li>
 		
-		<li><a href="aljazeera.html">Al Jazeera</a></li>
+		<li><a href="hackernews.html">Hacker News</a></li>
 		
 		<li><a href="reuters.html">Reuters</a></li>
 		
 	</ul>
 
+	
+	<article>
+		<h2>
+			<a href="https://www.aljazeera.com/news/2022/8/16/china-imposes-sanctions-on-seven-taiwan-secessionist-officials" target="_blank">China imposes sanctions on seven Taiwan ‘secessionist’ officials</a>
+		</h2>
+		Beijing accuses the group of pushing independence for the island it claims as its own.
+		<small>
+			on Tue, 16 Aug 2022 10:12 Asia/Saigon
+		</small>
+		
+	</article>
+	
+	<article>
+		<h2>
+			<a href="https://www.aljazeera.com/economy/2022/8/16/australia-new-zealand-deny-rumours-of-meat-ban-to-china" target="_blank">Australia, New Zealand deny ‘rumours’ of meat ban to China</a>
+		</h2>
+		Response comes after Chinese media reports imports could be suspended over foot-and-mouth disease concerns. 
+		<small>
+			on Tue, 16 Aug 2022 09:10 Asia/Saigon
+		</small>
+		
+	</article>
 	
 	<article>
 		<h2>
@@ -341,31 +365,9 @@
 		
 	</article>
 	
-	<article>
-		<h2>
-			<a href="https://www.aljazeera.com/program/start-here/2022/8/15/afghanistan-under-the-taliban-start-here" target="_blank">Afghanistan under the Taliban | Start Here</a>
-		</h2>
-		Can the Taliban fix Afghanistan’s economic crisis? 
-		<small>
-			on Mon, 15 Aug 2022 20:21 Asia/Saigon
-		</small>
-		
-	</article>
-	
-	<article>
-		<h2>
-			<a href="https://www.aljazeera.com/news/2022/8/15/the-taliban-mark-one-year-since-in-power" target="_blank">Taliban celebrates ‘victory day’, as Afghans face economic crisis</a>
-		</h2>
-		Afghanistan marks turbulent year that saw the economy collapse, women&#039;s rights crushed and a humanitarian crisis worsen.
-		<small>
-			on Mon, 15 Aug 2022 19:52 Asia/Saigon
-		</small>
-		
-	</article>
-	
 
 	<footer>
-		Updated 16. Aug 2022 at 08:53 Asia/Saigon.
+		Updated 16. Aug 2022 at 10:50 Asia/Saigon.
 	</footer>
 </body>
 
